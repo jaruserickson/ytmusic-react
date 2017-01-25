@@ -15,7 +15,7 @@ class Gallery extends Component {
 
 	playVideo(vidId){
 		console.log("play");
-		document.getElementById('iframe').innerHTML = '<Iframe src="https://youtube.com/v/' + vidId + '&autoplay=1" width="426" height="240"/>';
+		document.getElementById('iframe').innerHTML = '<Iframe src="https://youtube.com/embed/' + vidId + '?autoplay=1" width="426" height="240"/>';
 	}
 
 	render() {
