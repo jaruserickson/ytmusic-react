@@ -12,4 +12,6 @@ Just click [here](http://jaruserickson.com/ytmusic) and search for your favourit
 - YouTube Data API v3
 - react-bootstrap/iframe
 
+Big thanks to David Katz on udemy for the great framework and lessons!
+
 *created with :purple_heart: on a wednesday in january*
