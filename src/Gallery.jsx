@@ -12,62 +12,13 @@ class Gallery extends Component {
 			playing: false
 		}
 	}
-	
-	/*playAudio(previewUrl){
-		let audio = new Audio(previewUrl);
-		if (!this.state.playing){
-			audio.play();
-			this.setState({
-				playing: true,
-				playingUrl: previewUrl,
-				audio
-			})
-		} else {
-			if (this.state.playingUrl === previewUrl){
-				this.state.audio.pause();
-				this.setState({
-					playing: false
-				})
-			} else {
-				this.state.audio.pause();
-				audio.play();
-				this.setState({
-					playing: true,
-					playingUrl: previewUrl,
-					audio
-				})
-			}
-		}
-	}*/
-	/*
+
 	playVideo(vidId){
-		console.log("memes");
-		player = new YT.Player('iframe', {
-			height:720,
-			width:480,
-			videoId: vidId,
-			events: {
-				'onReady' : onPlayerReady,
-				'onStateChange' : onPlayerStateChange
-			}
-		});
-	}
-
-	onPlayerReady(event){
-		player.setPlaybackQuality("large");
-		this.setState({playing: player.get})
-	}
-
-	onPlayerStateChange(){
-
-	}*/
-	playVideo(vidId){
-		console.log("player???");
-		document.getElementById('iframe').innerHTML = '<Iframe url="https://youtube.com/watch?v=' + vidId + '" width="720" height="480"/>';
+		console.log("play");
+		document.getElementById('iframe').innerHTML = '<Iframe src="https://youtube.com/v/' + vidId + '&autoplay=1" width="426" height="240"/>';
 	}
 
 	render() {
-		//const { tracks } = this.props; //equiv to tracks = this.props.tracks
 		let videos = this.props.videos !== [] ? this.props.videos : [];
 		let names = this.props.vidNames !== [] ? this.props.vidNames : [];
 		let thumbs = this.props.vidThumbs !== [] ? this.props.vidThumbs : [];
