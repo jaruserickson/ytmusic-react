@@ -131,7 +131,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<div className="title"><img className="title-img" alt="title" src="see-thru.png"/></div>
+				<div className="title"><a target="_blank" href="http://github.com/jaruserickson/ytmusic-react"><img alt="Check it on github!" className="title-img" alt="title" src="see-thru.png"/></a></div>
 				<FormGroup>
 					<InputGroup bsSize="large">
 						<FormControl 
