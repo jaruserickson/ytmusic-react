@@ -1,7 +1,7 @@
 # ytmusic-react
 ![logo](https://github.com/jaruserickson/ytmusic/blob/master/img/banner.png?raw=true "logo!")
 
-'ytmusic' is a web application built in React.JS that attempts to compliment the sublime music listening experience YouTube offers.
+'ytmusic' is a web application built with React.JS that attempts to compliment the sublime music listening experience YouTube offers.
 
 ## Usage
 Just click [here](http://jaruserickson.com/ytmusic-react) and search for your favourite youtube channel!
