@@ -1,0 +1,3 @@
+- still have to fix the profile picture distortion issue
+- play/pause switch
+- add a button to request more songs/next page
