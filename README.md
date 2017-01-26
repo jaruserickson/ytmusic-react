@@ -14,4 +14,4 @@ Just click [here](http://jaruserickson.com/ytmusic-react) and search for your fa
 
 Big thanks to David Katz on udemy for the great framework and lessons!
 
-*created with :purple_heart: on a wednesday in january*
+*created with :purple_heart: in january*
