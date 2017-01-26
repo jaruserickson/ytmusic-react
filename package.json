@@ -1,6 +1,6 @@
 {
   "name": "ytmusic",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "private": true,
   "homepage": "https://jaruserickson.com/ytmusic-react",
   "devDependencies": {
@@ -11,7 +11,9 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
-    "react-iframe": "0.0.4"
+    "react-iframe": "0.0.4",
+    "react-video": "^1.5.3",
+    "react-youtube": "^7.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
