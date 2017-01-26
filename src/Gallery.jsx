@@ -14,15 +14,39 @@ class Gallery extends Component {
 	}
 
 	playVideo(vidId){
+		const YT_VID_URL = 'https://www.googleapis.com/youtube/v3/videos';
+		const YT_KEY = 'AIzaSyBYNVP6pCLRPQs2Grv1j4XX9t7kZGAG-e4';
 		console.log("play");
-		document.getElementById('iframe').innerHTML = '<Iframe src="https://youtube.com/embed/' + vidId + '?autoplay=1" width="426" height="240"/>';
+		/*let FETCH_URL = `${YT_VID_URL}?key=${YT_KEY}&id=${vidId}&part=contentDetails`;
+
+		//need a better way to go to the next video lmao (just use vanilla calls from the old ytmusic)
+		fetch(FETCH_URL, {
+			method: 'GET'
+		})
+		.then(response => response.json())
+		.then(json => {
+			let videos = this.props.videos !== [] ? this.props.videos : [];
+			let time = json.items[0].contentDetails.duration;
+			let theTime = time.substring(2,time.length).split("M");
+			let mins = theTime[0];
+			let secs = theTime[1].split("S")[0];
+			console.log('time', 'mins', mins, 'secs', secs);*/
+			document.getElementById('iframe').innerHTML = '<Iframe src="https://youtube.com/embed/' + vidId + '?autoplay=1&showinfo=0&controls=0" width="426" height="240"/>';
+			/*setTimeout(function(){
+				if (videos.indexOf(vidId) !== videos.length - 1){
+					this.playVideo(videos[videos.indexOf(vidId) + 1]);
+				}else{
+					this.playVideo(videos[0]);
+				}
+			}, mins*60*1000 + secs*1000);
+		});*/
+		
 	}
 
 	render() {
 		let videos = this.props.videos !== [] ? this.props.videos : [];
 		let names = this.props.vidNames !== [] ? this.props.vidNames : [];
 		let thumbs = this.props.vidThumbs !== [] ? this.props.vidThumbs : [];
-		console.log('synop',videos,names,thumbs);
 
 		return (
 			<div>

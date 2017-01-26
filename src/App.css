@@ -3,6 +3,7 @@ body{
 	color: #fff;
 	display:flex;
 	justify-content: center;
+	overflow-x:hidden;
 
 }
 
@@ -146,6 +147,10 @@ body{
 
 #iframe{
 	margin-top:40px;
+}
+#ytFrame{
+	width:100px;
+	height:200px;
 }
 
 @keyframes fade-in {
