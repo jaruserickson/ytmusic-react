@@ -52,7 +52,7 @@ class App extends Component {
 					this.setState({uploads});
 					console.log('uploads', this.state.uploads);
 
-					//fetch uploaded videos as a part of the 
+					//fetch uploaded videos as a part of the
 					FETCH_URL = `${YT_PL_URL}?key=${YT_KEY}&part=contentDetails&playlistId=${uploads}&maxResults=${this.state.vidNum}`;
 					fetch(FETCH_URL, {
 						method:'GET'
@@ -125,16 +125,16 @@ class App extends Component {
 				})
 			});
 		} //else
-		
+
 	}
 
 	render() {
 		return (
 			<div className="App">
-				<div className="title"><a target="_blank" href="http://github.com/jaruserickson/ytmusic-react"><img alt="Check it on github!" className="title-img" alt="title" src="see-thru.png"/></a></div>
+				<div className="title"><a target="_blank" href="https://github.com/jaruserickson/ytmusic-react"><img alt="Check it on github!" className="title-img" alt="title" src="see-thru.png"/></a></div>
 				<FormGroup>
 					<InputGroup bsSize="large">
-						<FormControl 
+						<FormControl
 						type="text"
 						placeholder="Search for a Channel"
 						value={this.state.query}
@@ -153,7 +153,7 @@ class App extends Component {
 				{
 					this.state.channel !== null
 					? <div>
-						  <Profile 
+						  <Profile
 							branding={this.state.branding}
 							avatar={this.state.avatar}
 							subscribers={this.state.subscribers}
